@@ -1,0 +1,23 @@
+<section class="container">
+  <div class="row">
+    <div class="col mb-3">
+      <h1>🏛️ Open Museum</h1>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <app-single-museum class="col-4"
+      *ngFor="let museum of museums"
+      [museumId]="museum.id"
+      [museumName]="museum.nom_du_musee"
+      [museumAdress]="museum.adr"
+      [museumZipCode]="museum.cp"
+      [museumCity]="museum.ville"
+      [museumPhone]="museum.telephone"
+      [museumWebSite]="museum.sitweb"
+      [museumOpening]="museum.periode_ouverture">
+      </app-single-museum>
+
+  </div>
+</section>
