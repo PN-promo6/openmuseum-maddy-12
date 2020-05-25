@@ -6,7 +6,8 @@
         <p class="card-text"> 📍<strong>Adresse:</strong> {{museum.address}} {{museum.cp}} {{museum.city}}</p>
         <p class="card-text"> 🌐 <strong>Site web:</strong> <a href="">{{museum.website}}</a></p>
         <p class="card-text"> ☎️ <strong>Téléphone:</strong> {{museum.telephone}}</p>
-        <p class="card-text">📠 <strong>Fax:</strong> {{museum.fax}}</p>
+
+        <p * ngIf="museum.fax" class="card-text">📠 <strong>Fax:</strong> {{museum.fax}}</p>
         <p class="card-text"> 🕙 <strong>Horaires d'ouvertures:</strong> {{museum.opening}}</p>
         <p class="card-text"> 📅 <strong>Fermeture annuelles:</strong> {{museum.annual_closure}}</p>
 
