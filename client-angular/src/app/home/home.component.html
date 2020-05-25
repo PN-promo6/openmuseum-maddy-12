@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1> 🏛️ Open Museum</h1>
+    </div>
+  </div>
+  <div class="row">
+    <app-single-museum class="col-lg-6" *ngFor="let museum of museums" [museum]="museum">
+    </app-single-museum>
+  </div>
+</div>
